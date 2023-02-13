@@ -91,7 +91,7 @@ export default function Home() {
 
               <Paragraph level={4} style={{ color: '#4D61E0', fontWeight: 'bold' }}>Full Stack Developer</Paragraph>
 
-              <Paragraph level={5} style={{ color: '#B6B6B6' }}>Let's Build a brighter future with coding</Paragraph>
+              <Paragraph level={5} style={{ color: '#B6B6B6' }}>Let&#39s Build a brighter future with coding</Paragraph>
 
 
               <Button
