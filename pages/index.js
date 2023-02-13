@@ -149,7 +149,7 @@ export default function Home() {
               I'm Full Stack Developer and interested in
             </Title>
             <Title level={3} style={{ margin: '0 0 40px 0'}}> 
-              {`Automation & Scripting`}
+              Automation and Scripting
             </Title>
           </Space>
 
