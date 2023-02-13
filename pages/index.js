@@ -253,7 +253,7 @@ export default function Home() {
                 cover={<img alt='gundam' src='/gundam.png'/>}
                 bordered={false}
                 actions={[
-                  <LinkOutlined key='link' key='link' onClick={() => openLink('https://gundam-client.vercel.app/')} />,
+                  <LinkOutlined key='link' onClick={() => openLink('https://gundam-client.vercel.app/')} />,
                   <GithubOutlined key='github' onClick={() => openLink('https://github.com/DakoYu/Gundam-Backend')}/>
                 ]}
                 style={{
