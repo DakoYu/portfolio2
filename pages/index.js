@@ -146,7 +146,7 @@ export default function Home() {
           >
             <Paragraph level={5} style={{ color: '#949FEE', fontWeight: 'bold', marginTop: '80px' }}>ABOUT</Paragraph>
             <Title level={3} style={{ margin: 0}}>
-              I'm Full Stack Developer and interested in
+              I&#39m Full Stack Developer and interested in
             </Title>
             <Title level={3} style={{ margin: '0 0 40px 0'}}> 
               Automation and Scripting
