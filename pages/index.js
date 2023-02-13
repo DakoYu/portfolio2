@@ -304,7 +304,7 @@ export default function Home() {
         >
           <Paragraph level={5} style={{ color: '#949FEE', fontWeight: 'bold', marginTop: '40px' }}>CONTACT</Paragraph>
 
-          <Title level={3} style={{ margin: '0 0 40px 0' }}>Let's get in touch with</Title>
+          <Title level={3} style={{ margin: '0 0 40px 0' }}>Let&#39s get in touch with</Title>
 
           <Space>
             <Button onClick={() => openLink('https://www.linkedin.com/in/dako-yu/')} icon={<LinkedinOutlined />}>LinkedIn</Button>
