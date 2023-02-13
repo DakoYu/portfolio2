@@ -1,12 +1,15 @@
-import { Layout, Menu, Col, Row, Space, Typography, Image, Button, Card, Avatar, Affix } from 'antd'
+import { Layout, Menu, Col, Row, Space, Typography, Image, Button, Card, Avatar, Affix, Grid } from 'antd'
 import { TwitterOutlined, GithubOutlined, LinkedinOutlined, MailOutlined, LinkOutlined } from '@ant-design/icons';
 
 const { Header, Content, Footer } = Layout;
 const { Title, Paragraph } = Typography
 const { Meta } = Card
+const { useBreakpoint } = Grid
 
 
 export default function Home() {
+  const screen = useBreakpoint()
+  
   const menuItems = [
     {
       key: 'about',
@@ -81,17 +84,17 @@ export default function Home() {
                 level={5} 
                 style={{ 
                   color: '#949FEE', 
-                  margin: 0
+                  margin: '10px 0 0 0'
                 }}
               >
                 Hi there!
               </Paragraph>
 
-              <Title style={{ fontWeight: 'bold' }}>Dako Yu</Title>
+              <Title style={{ fontWeight: 'bold', }}>Dako Yu</Title>
 
               <Paragraph level={4} style={{ color: '#4D61E0', fontWeight: 'bold' }}>Full Stack Developer</Paragraph>
 
-              <Paragraph level={5} style={{ color: '#B6B6B6' }}>Let&#39s Build a brighter future with coding</Paragraph>
+              <Paragraph level={5} style={{ color: '#B6B6B6' }}>{"Let's Build a brighter future with coding"}</Paragraph>
 
 
               <Button
@@ -107,7 +110,8 @@ export default function Home() {
 
               <Space
                 style={{
-                  marginTop: '20px'
+                  marginTop: '20px',
+                  marginBottom: '20px',
                 }}
               >
                 <Button onClick={() => openLink('https://www.linkedin.com/in/dako-yu/')} icon={<LinkedinOutlined />}>LinkedIn</Button>
@@ -116,13 +120,15 @@ export default function Home() {
               </Space>
 
             </div>
-
-            <Image
-              width='500px'
-              alt='coding'
-              src='/coding.svg'
-              preview={false}
-            />
+            {
+              !screen.xs && 
+              <Image
+                width='500px'
+                alt='coding'
+                src='/coding.svg'
+                preview={false}
+              />
+            }
           </Space>
         </div>
 
@@ -145,16 +151,16 @@ export default function Home() {
             }}
           >
             <Paragraph level={5} style={{ color: '#949FEE', fontWeight: 'bold', marginTop: '80px' }}>ABOUT</Paragraph>
-            <Title level={3} style={{ margin: 0}}>
-              I&#39m Full Stack Developer and interested in
+            <Title level={3} style={{ margin: 0, textAlign: 'center'}}>
+              {"I'm Full Stack Developer and interested in"}
             </Title>
             <Title level={3} style={{ margin: '0 0 40px 0'}}> 
               Automation and Scripting
             </Title>
           </Space>
 
-          <Row gutter={16} style={{ marginBottom: '80px' }}>
-            <Col span={8}>
+          <Row gutter={[16,16]} justify='center' style={{ display: 'flex', marginBottom: '40px', }}>
+            <Col lg={8}>
               <Card
                 hoverable
                 cover={<img alt='frontend' src='/next.webp'/>}
@@ -170,7 +176,7 @@ export default function Home() {
               </Card>
             </Col>
 
-            <Col span={8}>
+            <Col lg={8}>
               <Card
                 hoverable
                 cover={<img alt='backend' src='/python.png'/>}
@@ -186,7 +192,7 @@ export default function Home() {
               </Card>
             </Col>
 
-            <Col span={8}>
+            <Col lg={8}>
               <Card
                 hoverable
                 cover={<img alt='automation' src='/discord.webp'/>}
@@ -221,8 +227,8 @@ export default function Home() {
             My recent projects
           </Title>
 
-          <Row gutter={16} style={{ marginBottom: '80px' }}>
-            <Col span={8}>
+          <Row gutter={[16,16]} justify='center' style={{ display: 'flex', marginBottom: '40px', }}>
+            <Col lg={8}>
               <Card
                 hoverable
                 cover={<img src='/game.png'/>}
@@ -247,7 +253,7 @@ export default function Home() {
               </Card>
             </Col>
 
-            <Col span={8}>
+            <Col lg={8}>
               <Card
                 hoverable
                 cover={<img alt='gundam' src='/gundam.png'/>}
@@ -268,7 +274,7 @@ export default function Home() {
               </Card>
             </Col>
 
-            <Col span={8}>
+            <Col lg={8}>
               <Card
                 hoverable
                 cover={<img alt='cineplex' src='/cineplex.jpg'/>}
@@ -304,7 +310,7 @@ export default function Home() {
         >
           <Paragraph level={5} style={{ color: '#949FEE', fontWeight: 'bold', marginTop: '40px' }}>CONTACT</Paragraph>
 
-          <Title level={3} style={{ margin: '0 0 40px 0' }}>Let&#39s get in touch with</Title>
+          <Title level={3} style={{ margin: '0 0 40px 0' }}>{"Let's get in touch with"}</Title>
 
           <Space>
             <Button onClick={() => openLink('https://www.linkedin.com/in/dako-yu/')} icon={<LinkedinOutlined />}>LinkedIn</Button>
