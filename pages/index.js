@@ -119,6 +119,7 @@ export default function Home() {
 
             <Image
               width='500px'
+              alt='coding'
               src='/coding.svg'
               preview={false}
             />
@@ -148,7 +149,7 @@ export default function Home() {
               I'm Full Stack Developer and interested in
             </Title>
             <Title level={3} style={{ margin: '0 0 40px 0'}}> 
-              Automation & Scripting
+              {`Automation & Scripting`}
             </Title>
           </Space>
 
@@ -156,7 +157,7 @@ export default function Home() {
             <Col span={8}>
               <Card
                 hoverable
-                cover={<img src='/next.webp'/>}
+                cover={<img alt='frontend' src='/next.webp'/>}
                 bordered={false}
                 style={{
                   width: 250,
@@ -172,7 +173,7 @@ export default function Home() {
             <Col span={8}>
               <Card
                 hoverable
-                cover={<img src='/python.png'/>}
+                cover={<img alt='backend' src='/python.png'/>}
                 bordered={false}
                 style={{
                   width: 250,
@@ -188,13 +189,13 @@ export default function Home() {
             <Col span={8}>
               <Card
                 hoverable
-                cover={<img src='/discord.webp'/>}
+                cover={<img alt='automation' src='/discord.webp'/>}
                 bordered={false}
                 style={{
                   width: 250,
                 }}
               >
-                <Meta title='Scripting' description='I am a big fan of using codes to automate my works! Tools that I love to work with are pandas, requests, discord bot, selenium'/>
+                <Meta title='Scripting' description='I am a big fan of using codes to automate my works! Tools that I love to work with are pandas, requests, discord bot, selenium. '/>
               </Card>
             </Col>
           </Row>
@@ -239,7 +240,7 @@ export default function Home() {
                 ]}
               >
                 <Meta 
-                  avatar={<Avatar src='ff14.png'/>}
+                  avatar={<Avatar alt='game' src='ff14.png'/>}
                   title='Game Collection' 
                   description='The website would allow users to add their favorite games to their account!'
                 />
@@ -249,7 +250,7 @@ export default function Home() {
             <Col span={8}>
               <Card
                 hoverable
-                cover={<img src='/gundam.png'/>}
+                cover={<img alt='gundam' src='/gundam.png'/>}
                 bordered={false}
                 actions={[
                   <LinkOutlined key='link' key='link' onClick={() => openLink('https://gundam-client.vercel.app/')} />,
@@ -260,7 +261,7 @@ export default function Home() {
                 }}
               >
                 <Meta 
-                  avatar={<Avatar src='gunpla.jpeg'/>}
+                  avatar={<Avatar alt='gunpla' src='gunpla.jpeg'/>}
                   title='Gunpla Showcase' 
                   description='I built a website to showcase my recent gunpla built kits and other kits. Gunpla is my favorite hobby since I was a kid!'
                 />
@@ -270,7 +271,7 @@ export default function Home() {
             <Col span={8}>
               <Card
                 hoverable
-                cover={<img src='/cineplex.jpg'/>}
+                cover={<img alt='cineplex' src='/cineplex.jpg'/>}
                 bordered={false}
                 actions={[
                   <LinkOutlined key='link' onClick={() => {openLink('https://discord.com/api/oauth2/authorize?client_id=1062749573824647260&permissions=8&scope=bot')}}/>,
@@ -281,7 +282,7 @@ export default function Home() {
                 }}
               >
                 <Meta 
-                  avatar={<Avatar src='cineplex_icon.png'/>}
+                  avatar={<Avatar alt='cineplex bot' src='cineplex_icon.png'/>}
                   title='Cineplex Discord' 
                   description='A discord bot that displays the newests and future release movies. The bot can also track English and French movies!'
                 />
