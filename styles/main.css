@@ -1,15 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;500&display=swap');
+
+
 body {
-    font-family: 'Inter var', system-ui, -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, 'Noto Sans', sans-serif,
-    'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+    font-family: 'Ubuntu', sans-serif;
     margin: 0;
     padding: 0;
-}
-
-.slick-dots li button {
-    color: orange;
-}
-
-.slick-dots li.slick-active button:before {
-    color:orange !important;
 }
