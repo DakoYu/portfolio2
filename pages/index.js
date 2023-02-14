@@ -305,11 +305,11 @@ export default function Home() {
                   cover={<img alt='cineplex' src='/cineplex.jpg'/>}
                   bordered={false}
                   actions={[
-                    <Tooltip placement='top' title='Invite Link'>
-                      <LinkOutlined key='link' onClick={() => {openLink('https://discord.com/api/oauth2/authorize?client_id=1062749573824647260&permissions=8&scope=bot')}}/>
+                    <Tooltip key='link' placement='top' title='Invite Link'>
+                      <LinkOutlined onClick={() => {openLink('https://discord.com/api/oauth2/authorize?client_id=1062749573824647260&permissions=8&scope=bot')}}/>
                     </Tooltip>,
-                    <Tooltip placement='top' title='Discord Bot'>
-                      <GithubOutlined key='github' onClick={() => openLink('https://github.com/DakoYu/Cineplex-Discord-Bot')}/>
+                    <Tooltip key='github' placement='top' title='Discord Bot'>
+                      <GithubOutlined onClick={() => openLink('https://github.com/DakoYu/Cineplex-Discord-Bot')}/>
                     </Tooltip>
                   ]}
                   style={{
