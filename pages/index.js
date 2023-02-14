@@ -246,18 +246,16 @@ export default function Home() {
                     width: 250,
                   }}
                   actions={[
-                    <Tooltip placement='top' title='Live Demo'>
-                      <LinkOutlined key='link' onClick={() => openLink('https://game-frontend-xi.vercel.app/')}/>
+                    <Tooltip key='link' placement='top' title='Live Demo'>
+                      <LinkOutlined onClick={() => openLink('https://game-frontend-xi.vercel.app/')}/>
                     </Tooltip>,
-                    <Tooltip placement='top' title='Frontend'>
-                      <GithubOutlined 
-                        key='github' 
+                    <Tooltip key='github' placement='top' title='Frontend'>
+                      <GithubOutlined  
                         onClick={() => openLink('https://github.com/DakoYu/game-frontend')}
                       />
                     </Tooltip>,
-                    <Tooltip placement='top' title='Backend'>
-                      <GithubOutlined 
-                        key='github' 
+                    <Tooltip key='github' placement='top' title='Backend'>
+                      <GithubOutlined  
                         onClick={() => openLink('https://github.com/DakoYu/game-backend')}
                       />
                     </Tooltip>
@@ -277,15 +275,14 @@ export default function Home() {
                   cover={<img alt='gundam' src='/gundam.png'/>}
                   bordered={false}
                   actions={[
-                    <Tooltip placement='top' title='Live Demo'>
-                      <LinkOutlined  key='link' onClick={() => openLink('https://gundam-client.vercel.app/')} />
+                    <Tooltip key='link' placement='top' title='Live Demo'>
+                      <LinkOutlined onClick={() => openLink('https://gundam-client.vercel.app/')} />
                     </Tooltip>,
-                    <Tooltip placement='top' title='Frontend'>
-                      <GithubOutlined key='github' onClick={() => openLink('https://github.com/DakoYu/Gundam-Backend')}/>
+                    <Tooltip key='github' placement='top' title='Frontend'>
+                      <GithubOutlined onClick={() => openLink('https://github.com/DakoYu/Gundam-Backend')}/>
                     </Tooltip>,
-                    <Tooltip placement='top' title='Backend'>
+                    <Tooltip key='github' placement='top' title='Backend'>
                       <GithubOutlined 
-                        key='github' 
                         onClick={() => openLink('https://github.com/DakoYu/Gundam-Backend')}
                       />
                     </Tooltip>,
