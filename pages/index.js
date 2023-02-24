@@ -1,5 +1,7 @@
 import { Layout, Menu, Col, Row, Space, Typography, Image, Button, Card, Avatar, Affix, Grid, Tooltip } from 'antd'
 import { TwitterOutlined, GithubOutlined, LinkedinOutlined, MailOutlined, LinkOutlined } from '@ant-design/icons';
+import axios from 'axios'
+import fileDownload from 'js-file-download'
 import Head from 'next/head'
 
 const { Header, Content, Footer } = Layout;
@@ -36,6 +38,14 @@ export default function Home() {
     if (element) {
       element.scrollIntoView({ behavior: 'smooth' })
     }
+  }
+
+  const handleDownload = async() => {
+    const res = await axios.get('https://dl.dropboxusercontent.com/s/8o3ro61dq5fkw5t/Dako.pdf?dl=0', {
+      responseType: 'blob'
+    })
+
+    fileDownload(res.data, 'Dako.pdf')
   }
 
 
@@ -107,7 +117,7 @@ export default function Home() {
 
 
                 <Button
-                  // size='large'
+                  onClick={handleDownload}
                   style={{
                     background: '#4D61E0',
                     color: '#fff',
@@ -129,8 +139,9 @@ export default function Home() {
                 </Space>
 
               </div>
+
               {
-                !screen.xs && 
+                (screen.lg) && 
                 <Image
                   width='500px'
                   alt='coding'
